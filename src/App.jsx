@@ -11,7 +11,6 @@ import {
   ROUTES,
 } from "./";
 
-
 /**
  * De esta manera manejamos las rutas de un hash router
  * /#/...route
