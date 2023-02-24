@@ -7,17 +7,16 @@ import {
   Menu,
   ItemLink,
   ItemNavLink,
+  BlogPost,
+  ROUTES,
 } from "./";
+
 
 /**
  * De esta manera manejamos las rutas de un hash router
  * /#/...route
  */
-const ROUTES = {
-  HOME: "/",
-  BLOG: "blog",
-  PROFILE: "profile",
-};
+
 function App() {
   return (
     <>
@@ -28,8 +27,9 @@ function App() {
           <ItemNavLink label={"Profile"} route={ROUTES.PROFILE} />
         </Menu>
         <Routes>
-          <Route path="blog" element={<BlogPage />} />
-          <Route path="profile" element={<ProfilePage />} />
+          <Route path={ROUTES.BLOG} element={<BlogPage />} />
+          <Route path={ROUTES.BLOG_POST} element={<BlogPost />} />
+          <Route path={ROUTES.PROFILE} element={<ProfilePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </HashRouter>
