@@ -1,9 +1,9 @@
 import React from "react";
 
-export const Menu = () => {
+export const Menu = ({ children }) => {
   return (
-    <>
-      <div>Menu</div>
-    </>
+    <nav>
+      <ul>{children}</ul>
+    </nav>
   );
 };
