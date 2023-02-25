@@ -26,8 +26,9 @@ function App() {
           <ItemNavLink label={"Profile"} route={ROUTES.PROFILE} />
         </Menu>
         <Routes>
-          <Route path={ROUTES.BLOG} element={<BlogPage />} />
-          <Route path={ROUTES.BLOG_POST} element={<BlogPost />} />
+          <Route path={ROUTES.BLOG} element={<BlogPage />}>
+            <Route path={ROUTES.BLOG_POST} element={<BlogPost />} />
+          </Route>
           <Route path={ROUTES.PROFILE} element={<ProfilePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

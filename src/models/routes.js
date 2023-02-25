@@ -1,7 +1,7 @@
 export const ROUTES = {
   HOME: "/",
   BLOG: "blog",
-  BLOG_POST: "blog/:slug",
+  BLOG_POST: ":slug",
   PROFILE: "profile",
   BACK: -1,
 };
